@@ -1,0 +1,228 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#efc04a"
+        android:elevation="@dimen/default_elevation">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:id="@+id/action_bar_settings"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:tint="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/action_bar_settings"
+            android:layout_toEndOf="@+id/action_bar_settings" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            android:id="@+id/action_bar_forward"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/chat_background">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background ="@drawable/progress"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:visibility="visible"/>
+
+    <ListView
+        android:id="@+id/messagesContainer_lstView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="60dp"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null" />
+
+        <io.codetail.widget.RevealFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_container"
+            android:background="#F0EFED"
+           >
+
+            <LinearLayout
+                android:id="@+id/reveal_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"  >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/material_background"
+                        android:src="@drawable/ic_gallery"
+                        android:tint="@color/default_bmb_normal_color"
+                        android:id="@+id/picture"
+                        android:onClick="imageSelectionButtonClick"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Picture" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/material_background"
+                        android:src="@drawable/ic_wadrobe_icon"
+                        android:tint="@color/red"
+                        android:onClick="outfitSelectionButtonClick"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Outfit" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/material_background"
+                        android:src="@drawable/ic_outfit"
+                        android:tint="@color/red"
+                        android:onClick="clotheSelectionButtonClick"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Wardrobe" />
+
+
+                </LinearLayout>
+                <!-- Other 2 icons here-->
+
+            </LinearLayout>
+
+        </io.codetail.widget.RevealFrameLayout>
+
+        <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#efc04a"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:baselineAligned="false">
+
+        <ImageButton
+            android:id="@+id/imageSelectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dip"
+            android:layout_gravity="start"
+            android:background="@drawable/ic_menu_attachment"
+            android:onClick="show"
+            />
+
+
+        <EditText
+            android:id="@+id/messageEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/comment_border"
+            android:padding="5dip"
+            android:hint="type message here..."
+            />
+
+        <Button
+            android:id="@+id/chatSendButton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Send"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:onClick="onChatSendClicked"
+            android:background="@android:color/transparent"
+            />
+        </LinearLayout>
+
+</RelativeLayout>
+    </LinearLayout>

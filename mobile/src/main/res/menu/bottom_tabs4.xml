@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+
+    <item
+        android:id="@+id/tab_undo"
+        android:color="@color/second"
+        android:icon="@drawable/ic_undo_black_24dp"
+        android:title="Undo" />
+    <item
+        android:id="@+id/tab_resize"
+        android:color="@color/list_background_pressed"
+        android:icon="@drawable/ic_zoom_out_map_white_18dp"
+        android:title="Resize" />
+    <item
+        android:id="@+id/tab_free_hand_crop"
+        android:color="@android:color/holo_orange_dark"
+        android:icon="@drawable/ic_create_white_24dp"
+        android:title="Free Hand Crop" />
+
+</menu>

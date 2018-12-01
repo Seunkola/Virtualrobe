@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Shirts</item>
+        <item>Bottoms</item>
+        <item>Caps</item>
+        <item>Accessories</item>
+        <item />
+        <item>Close Board</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_wadrobe_icon</item>
+        <item>@drawable/ic_wadrobe_icon</item>
+        <item>@drawable/ic_wadrobe_icon</item>
+        <item>@drawable/ic_wadrobe_icon</item>
+        <item>0</item>
+        <item>@drawable/ic_wadrobe_icon</item>
+    </array>
+
+    <string-array name="events">
+        <item>Work</item>
+        <item>Birthday Party</item>
+        <item>Dinner Date</item>
+        <item>Gym/Sports Center</item>
+        <item>Night club/Bar</item>
+        <item>Funeral</item>
+    </string-array>
+
+</resources>

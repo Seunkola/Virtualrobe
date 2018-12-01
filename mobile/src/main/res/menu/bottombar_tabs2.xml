@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+
+    <item
+        android:id="@+id/tab_wardrobe"
+        android:color="@android:color/holo_orange_dark"
+        android:icon="@drawable/ic_outfit"
+        android:title="Wardrobe" />
+
+    <item
+        android:id="@+id/tab_laundry"
+        android:color="@color/second"
+        android:icon="@drawable/basket_icon"
+        android:title="Laundry Basket" />
+    <item
+        android:id="@+id/tab_calendar"
+        android:color="@color/third"
+        android:icon="@drawable/ic_today_white_24dp"
+        android:title="My Calendar" />
+
+    <item
+        android:id="@+id/tab_friends"
+        android:color="@color/list_background_pressed"
+        android:icon="@drawable/ic_group_white_24dp"
+        android:title="Friends" />
+</menu>

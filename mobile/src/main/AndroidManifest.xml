@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.virtualrobe.virtualrobe.virtualrobe_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!--
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f8858383972680ee1023d75d14f8f0cc7e38e15c" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".Search.Search_Activity" />
+
+        <activity
+            android:name=".Search.Search_Activity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".welcome"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".Search.Search_Activity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile_Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <activity
+            android:name=".SocialFeatures.messages"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CommentsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CommentsActivity" />
+
+        <!-- chat room -->
+
+
+        <!-- help -->
+        <activity android:name=".help.helpActivity" />
+
+        <!-- crop -->
+        <activity android:name=".freehand_image_cropper.cropActivity" />
+        <activity android:name=".freehand_image_cropper.ImageCropActivity" />
+
+        <!-- loading screen -->
+
+        <activity
+            android:name=".splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Clothes_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.View_Cloth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_upload.UploadActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Styling_board.Styling_activity" />
+        <activity android:name=".Styling_board.Cloth_selection_activity" />
+        <activity
+            android:name=".ShoppingMall.Adapters.View_itemDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".newsfeed_layout.MyOutfits" />
+        <activity
+            android:name=".Registration.Sign_up_Activity"
+            android:theme="@style/SignUpActivityTheme" />
+        <activity
+            android:name=".Registration.save_to_database"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".MainActivity$NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity_upload.Free_hand_cropper_updated.CropActivity"></activity>
+        <activity android:name=".Activity_upload.Free_hand_cropper_updated.DisplayCropActivity" />
+        <activity android:name=".Profile_layout.Calendar" />
+        <activity android:name=".Start_up_Page" />
+        <activity android:name=".Registration.Login" />
+        <activity android:name=".Registration.Register" />
+        <activity android:name=".Registration.ResetPasswordActivity" />
+    </application>
+
+</manifest>

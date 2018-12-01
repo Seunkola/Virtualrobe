@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efc04a"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VIRTUALROBE"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/textView3"
+
+        android:layout_gravity="right|left"
+        android:layout_marginTop="106dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create your virtual wardrobe"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/button_boarder"
+        android:text="TERMS AND CONDITIONS"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*click to read and agree"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fe0000"
+        />
+
+
+
+
+</RelativeLayout>

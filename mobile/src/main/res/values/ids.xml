@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="five" type="id"></item>
+    <item name="cloth_size" type="id"></item>
+    <item name="btn_multi_choice_dialog" type="id"></item>
+</resources>

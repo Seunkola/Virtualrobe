@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">Virtualrobe</string>
+
+    <string name="facebook_app_id">1142421045791247</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_favorite">Message</string>
+    <string name="action_search">Search...</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Log Out</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="Create">Create</string>
+    <string name="upload_activity">UploadActivity</string>
+    <string name="download_activity">DownloadActivity</string>
+    <string name="download_selection_activity">Select a file from the bucket</string>
+    <string name="download">Download</string>
+    <string name="manage_download">Manage downloads</string>
+    <string name="upload">Upload</string>
+    <string name="manage_upload">Manage uploads</string>
+    <string name="upload_file">Upload a file</string>
+    <string name="upload_image">Upload an image</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="pause_all">Pause all</string>
+    <string name="cancel_all">Cancel all</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="please_wait">Please wait</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="city">Present Location</string>
+    <string name="no_text"> </string>
+    <string name="addoutfit">Add</string>
+    <string name="removeoutfit">Remove</string>
+    <string name="chg_bacground">Background Settings</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Find People</item>
+        <item>Photos</item>
+        <item>Communities</item>
+        <item>Pages</item>
+        <item>What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_homes</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_view_image">ViewImage</string>
+    <string name="pls">Please Wait</string>
+    <string name="edit">Edit</string>
+    <string name="edit_descr">Add Outfit Description</string>
+    <string name="assign">Assign</string>
+    <string name="assign_descr">Assign Outfit To Calendar</string>
+    <string name="crop">Crop</string>
+    <string name="crop_descr">Crop Outfit</string>
+    <string name="delete_descr">Delete Outfit</string>
+    <string name="edit_descr2">Add Clothe Description</string>
+    <string name="assign_descr1">Assign Clothe To Laundry Basket</string>
+    <string name="crop_descr1">Crop Cloth</string>
+    <string name="delete_descr1">Delete Cloth</string>
+    <string name="change_touch_mode">Change Touch Mode</string>
+    <string name="search_label">Virtualrobe</string>
+    <string name="search_hint">Search</string>
+    <string name="title_activity_chat_room">Chats</string>
+
+    <!--push-->
+    <string name="push_demo_title">Push Notification</string>
+    <string name="push_demo_progress_dialog_title">Please wait &#8230;</string>
+    <string name="push_demo_wait_message_register">Registering device for push notification.</string>
+    <string name="push_demo_wait_message_update_notification">Updating push notification status.</string>
+    <string name="push_demo_wait_message_update_subscription">Updating subscription status.</string>
+    <string name="push_demo_error_message_register">Failed to register device due to \'%s\'.</string>
+    <string name="push_demo_error_message_update_notification">Failed to update notification status due to \'%s\'.</string>
+    <string name="push_demo_error_message_update_subscription">Failed to update subscription due to \'%s\'.</string>
+    <string name="push_demo_error_message_google_play_services_unavailable">Push Notifications are disabled because Google Play Services are unavailable on the device.</string>
+    <string name="push_demo_confirm_message_unsubscribe">Do you want to unsubscribe from \'%s\'.</string>
+    <string name="privacy_text1">Virtualrobe Limited built the Virtualrobe app as a Free app. This SERVICE is provided by Virtualrobe Limited at no cost and is intended for use as is. This page is used to inform users regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service. If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Virtualrobe unless otherwise defined in this Privacy Policy.</string>
+    <string name="privacy_text2">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Name,Location,sex. The information that we request is will be retained by us and used as described in this privacy policy. The app does use third party services that may collect information used to identify you. Link to privacy policy of third party service providers used by the app Google Play Services Firebase Analytics</string>
+    <string name="privacy_text3">We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</string>
+    <string name="page_text4">Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your device internal memory. This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collection information and to improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</string>
+    <string name="privacy_text5">We may employ third-party companies and individuals due to the following reasons: To facilitate our Service; To provide the Service on our behalf; To perform Service-related services; or To assist us in analyzing how our Service is used. We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</string>
+    <string name="page_text6">We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</string>
+    <string name="page_text7">This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</string>
+    <string name="page_text8">These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</string>
+    <string name="page_text9">We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</string>
+    <string name="contact_us">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at info@virtualrobe.com</string>
+    <string name="terms_text1">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Virtualrobe Limited. Virtualrobe Limited is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for. The Virtualrobe app stores and processes personal data that you have provided to us, in order to provide our Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the [Virtualrobe] app won’t work properly or at all. You should be aware that there are certain things that Virtualrobe Limited will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Virtualrobe Limited cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left. If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app. Along the same lines, Virtualrobe Limited cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Virtualrobe Limited cannot accept responsibility With respect to Virtualrobe Limited’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Virtualrobe Limited accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app. At some point, we may wish to update the app. The app is currently available on Android and iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Virtualrobe Limited does not promise that it will always update the app so that it is relevant to you and/or works with the iOS/Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</string>
+    <string name="terms_text2">We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page. These changes are effective immediately after they are posted on this page.</string>
+    <string name="terms_contactus">If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at info@virtualrobe.com</string>
+
+    <!--sticker -->
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="action_complete">完成</string>
+    <string name="double_click_input_text">双击输入文字</string>
+    <string name="add_sticker">添加贴纸</string>
+    <string name="add_bubble">添加气泡</string>
+    <string name="complete">完成</string>
+    <string name="publish_comment">说点什么呗……</string>
+    <string name="over_text_limit">您已超过字数限制</string>
+    <string name="invitation_title">Share Virtualrobe with friends</string>
+    <string name="invitation_message">This app allows you to choose what to wear virtually</string>
+    <string name="invitation_deep_link">https://h9bj6.app.goo.gl/qL6j</string>
+    <string name="invitation_custom_image">http://www.virtualrobe.com/banner.jpg</string>
+    <string name="invitation_ctas">Install</string>
+    <string name="send_failed">Sending invitations failed</string>
+    <string name="fmt_num_ratings" translatable="false">(%d)</string>
+    <string name="divider_bullet">•</string>
+    <string name="message_no_results">Oops, couldn\'t find any results\nthat matched your filter</string>
+    <string name="message_no_reviews">Be the first to leave a review!</string>
+    <string name="hint_review">Your opinion on the outfit</string>
+    <string name="submit">Submit</string>
+    <string name="filter_add_review">Add review</string>
+    <string name="add_category">Add category</string>
+    <string name="all_clothes">All Clothes</string>
+    <string name="outfit_suggestion">Outfit Suggestion</string>
+    <!--spinner array-->
+    <string-array name="item_array">
+        <item>Shirts</item>
+        <item>Bottoms</item>
+        <item>Accessories</item>
+        <item>Shoes</item>
+    </string-array>
+
+    <plurals name="likes_count">
+        <item quantity="one">%d like</item>
+        <item quantity="other">%d likes</item>
+    </plurals>
+
+    <!--sign up form -->
+    <string name="nickname">Nickname</string>
+    <string name="nickname_error">Please provide us with a nickname</string>
+    <string name="nickname_details">This will serve has your username</string>
+
+    <string name="gender">Gender</string>
+    <string name="gender_error">Please provide us with a gender</string>
+    <string name="gender_details">This will help us serve you better. Are you either Male, Female Or Other</string>
+
+    <string name="birthday">Birthday</string>
+    <string name="birthday_error">You must be at least 13.</string>
+    <string name="birthday_details">We will use your birthday only to calculate your age (older than 13).</string>
+
+    <string name="location">Country</string>
+    <string name="location_error">Cannot be empty</string>
+    <string name="location_details">We need this information to better serve you.</string>
+
+    <string name="favourite_colors">Favourite Colors</string>
+    <string name="favourite_colors_error">Enter a minimum of 3 colors</string>
+    <string name="favourite_colors_details">Enter 3 or more colors you love most. Separate each color using a comma or space</string>
+
+    <string name="fashion_style">Fashion Style</string>
+    <string name="fashion_style_error">Select at least one style</string>
+    <string name="fashion_style_details">How best do you describe your style. Choose from the List below and separate with a comma or space. "Trendy,
+        Casual,Exotic,Vibrant,Sexy,Preppy,Elegant,Bohemian,Punk,Artsy,Corporate,Gothic,Old Skool,Sporty"</string>
+
+    <string name="finished">You just completed an essential step YaaaY!</string>
+    <string name="confirm">Confirm</string>
+    <string name="where_are_you_going">Where are you going to?</string>
+    <string name="you_ordered">You\'ve Selected:\n%s</string>
+    <string name="email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="fullname">Name</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="hint_email">Email</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back">Back</string>
+
+</resources>

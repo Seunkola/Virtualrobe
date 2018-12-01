@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.virtualrobe.virtualrobe.virtualrobe_app.Profile_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_info"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <android.support.design.widget.FloatingActionButton
+            app:srcCompat="@drawable/ic_menu_camera"
+            app:fabSize="mini"
+            android:id="@+id/fab"
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            app:backgroundTint="#efc04a"
+            android:layout_above="@+id/user"
+            android:layout_alignRight="@+id/profile_image"
+            android:layout_alignEnd="@+id/profile_image" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/default_profile"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#25515151"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user"
+            android:layout_below="@+id/profile_image"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:id="@+id/Layout"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/no_of_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Friends"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"
+                />
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:text="Edit Profile"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+               />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Layout"
+            />
+
+
+    </RelativeLayout>
+
+
+    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:bbn_entries="@menu/bottombar_tabs2"
+        app:bbn_scrollEnabled="true"
+        app:bbn_badgeProvider="@string/bbn_badgeProvider"
+        app:layout_behavior="@string/bbn_phone_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

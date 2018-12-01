@@ -1,0 +1,94 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#efc04a"
+        android:elevation="@dimen/default_elevation">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:id="@+id/action_bar_settings"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:tint="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:text="New Message"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/action_bar_settings"
+            android:layout_toEndOf="@+id/action_bar_settings" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            android:id="@+id/action_bar_forward"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp"/>
+
+    </android.support.v7.widget.Toolbar>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.virtualrobe.virtualrobe.virtualrobe_app.chatroom.chatroom.activity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/selectButton"
+
+            android:id="@+id/book_list_View"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/selectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Select"
+            android:onClick="selectButtonClicked"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

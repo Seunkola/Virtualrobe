@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#25515151">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/t1"
+    android:layout_marginTop="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/default_profile"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#25515151"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Friends"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/no_of_friends"
+        android:layout_below="@+id/user"
+        android:textAlignment="center" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:layout_below="@+id/profile_image"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>
+<android.support.v4.view.ViewPager
+android:id="@+id/pager"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:layout_below="@+id/t1">
+<!-- Current + adjacent page titles...-->
+
+<android.support.v4.view.PagerTitleStrip
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="#efc04a"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp"
+    android:textColor="#fff"
+    />
+
+</android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/imageView_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/t1"
+        android:layout_alignEnd="@+id/t1"
+        android:layout_marginRight="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:clickable="true"
+        android:src="@drawable/abc_ic_clear_material"
+        android:layout_marginTop="-5dp"
+        android:tint="#000"
+        android:background="@drawable/round_border"/>
+
+    </RelativeLayout>

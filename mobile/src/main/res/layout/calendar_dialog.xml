@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!--gif view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gifview"
+            android:background="@color/black">
+
+            <com.medialablk.easygifview.EasyGifView
+                android:id="@+id/easyGifView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/boy"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gifview">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:text="Choose Event Start Time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"/>
+
+            <!--Start Time-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start"
+                android:id="@+id/start_time_layout"
+                android:layout_centerInParent="true">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_time"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/start_time_text"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/start_time"
+                    android:layout_toEndOf="@+id/start_time" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_time_end"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/start_time_text"
+                    android:layout_toEndOf="@+id/start_time_text"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_time_period"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/start_time_end"
+                    android:layout_toEndOf="@+id/start_time_end"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/end"
+                android:text="Choose Event End Time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/start_time_layout"
+                />
+
+            <!--End Time-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/end"
+                android:id="@+id/end_time_time_layout"
+                android:layout_centerInParent="true">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_time"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/end_time_text"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/end_time"
+                    android:layout_toEndOf="@+id/end_time" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_time_end"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/end_time_text"
+                    android:layout_toEndOf="@+id/end_time_text"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_time_period"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/end_time_end"
+                    android:layout_toEndOf="@+id/end_time_end"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Name"
+                android:text="Whats the event name?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/end_time_time_layout"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_name"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/Name"
+                />
+
+            <!--buttons-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/margin_30"
+                android:padding="10dp">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chip_deselect"
+                    android:text="Cancel"
+                    android:id="@+id/cancel_button"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chip_selected"
+                    android:text="Ok"
+                    android:id="@+id/ok_button"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

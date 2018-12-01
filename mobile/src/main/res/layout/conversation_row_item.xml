@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_gravity="end"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+         />
+
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:id="@+id/imgView"
+             android:scaleType="fitXY"
+             android:adjustViewBounds="true"
+             android:layout_gravity="start"
+             android:padding="7dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginEnd="10dp"
+             android:src="@drawable/grey"
+             android:background="@drawable/border2"
+             />
+         <ProgressBar
+             android:id="@+id/progress"
+             style="?android:attr/progressBarStyleInverse"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="start"
+             android:background ="@drawable/progress"
+             android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/contentWithBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxWidth="240dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="15sp"
+        android:layout_gravity="end"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray" />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/grey"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/background_image"
+        android:padding="5dp"
+        android:text="Item Title"
+        android:ellipsize="marquee"
+        android:maxEms="15"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="$1000"
+        android:textColor="@color/red"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:layout_below="@+id/title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sold By"
+            android:ellipsize="marquee"
+            android:maxEms="15"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:layout_below="@+id/title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Seller"
+            android:textColor="@color/list_background_pressed"
+            android:id="@+id/seller"
+            android:ellipsize="marquee"
+            android:maxEms="15"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:layout_below="@+id/title"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

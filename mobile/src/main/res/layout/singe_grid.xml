@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/card_view"
+android:layout_width="120dp"
+android:layout_height="150dp"
+card_view:cardUseCompatPadding="true"
+card_view:cardCornerRadius="8dp"
+android:layout_marginBottom="16dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.virtualrobe.virtualrobe.virtualrobe_app.model.SquareImageView
+        android:id="@+id/picture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/action_settings"
+        android:src="@drawable/grey"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Brand Name"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/picture"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#efc04a"/>
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+    <item
+        android:id="@+id/tab_home"
+        android:color="@color/list_background_pressed"
+        android:icon="@drawable/ic_home"
+        android:title="Newsfeed" />
+    <item
+        android:id="@+id/tab_profile"
+        android:color="@color/second"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/tab_outfit"
+        android:color="@android:color/holo_orange_dark"
+        android:icon="@drawable/ic_outfit"
+        android:title="Outfits" />
+    <item
+        android:id="@+id/tab_message"
+        android:color="@color/third"
+        android:icon="@drawable/ic_message_white_48dp"
+        android:title="Message" />
+</menu>

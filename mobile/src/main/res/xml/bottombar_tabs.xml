@@ -1,0 +1,18 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="Newsfeed" />
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/ic_profile"
+        title="Profile" />
+    <tab
+        id="@+id/tab_outfit"
+        icon="@drawable/ic_outfit"
+        title="Outfits" />
+    <tab
+        id="@+id/tab_gallery"
+        icon="@drawable/ic_gallery"
+        title="Gallery" />
+</tabs>

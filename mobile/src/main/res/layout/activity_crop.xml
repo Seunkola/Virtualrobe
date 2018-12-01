@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_upload.Free_hand_cropper_updated.CropActivity"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C0C0C0"
+    >
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_done"
+        android:text="Save"
+        android:drawableStart="@drawable/ic_done" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:text="Back"
+        android:drawableLeft="@drawable/ic_keyboard_backspace_black_24dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_keyboard_backspace_black_24dp" />
+
+
+    <ImageView
+        android:id="@+id/im_crop_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_ok"
+        android:background="#C0C0C0"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:scaleType="center"
+        android:src="@drawable/pants"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        android:id="@+id/view"></View>
+
+    <RelativeLayout
+        android:id="@+id/resize_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+       >
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:max="10"
+            android:layout_centerInParent="true"
+           android:thumb="@drawable/ic_zoom_out_map_white_18dp"
+            />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar1"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="29dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+    android:id="@+id/BottomNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:bbn_entries="@menu/bottom_tabs4"
+    app:bbn_scrollEnabled="true"
+    app:bbn_badgeProvider="@string/bbn_badgeProvider"
+    app:layout_behavior="@string/bbn_phone_view_behavior"
+    android:layout_alignParentBottom="true" />
+</android.support.design.widget.CoordinatorLayout>

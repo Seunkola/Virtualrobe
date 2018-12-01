@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        tools:context=".MainActivity">
+
+    <!-- #E0E0E0 Main feed recycler 0x88ff0000 -->
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_feeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        tools:listitem="@layout/newsfeed_list"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        />
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:arcColor="#efc04a"
+        app:reusable="true"
+        >
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:src="@drawable/ic_add_outfit_24dp"
+            app:fabSize="normal"
+            android:id="@+id/fab"
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            app:backgroundTint="#E53B14"
+            />
+
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+        <!-- Shadow below toolbar -->
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="4dp"
+    android:background="#40dedcdc" />
+
+        <!-- Empty list (pizza guy) view -->
+    <RelativeLayout
+    android:id="@+id/view_empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/toolbar"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="gone">
+
+    <ImageView
+        style="@style/AppTheme.PizzaGuy"
+        android:src="@drawable/pizza_monster" />
+
+    <TextView
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No Result"
+        android:textColor="@color/disabled_gray" />
+
+    </RelativeLayout>
+    </RelativeLayout>

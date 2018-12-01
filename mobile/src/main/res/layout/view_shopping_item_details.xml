@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/content_root">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/slider"
+        android:id="@+id/top_details"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sold By"
+            android:ellipsize="marquee"
+            android:maxEms="15"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sellers"
+            android:textColor="@color/list_background_pressed"
+            android:id="@+id/seller"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            android:text="$1000"
+            android:textColor="@color/red"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:gravity="end" android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/top_details"
+         android:id="@+id/review"
+         android:background="@drawable/border_products"
+         android:padding="5dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="Reviews"
+             android:textSize="15sp"
+             android:padding="5dp"
+             android:layout_weight="1"
+             android:textColor="@color/black"/>
+
+         <me.zhanghai.android.materialratingbar.MaterialRatingBar
+             android:id="@+id/restaurant_item_rating"
+             style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="5dp"
+             />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/review"
+        android:id="@+id/details_button"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_keyboard_arrow_up_black_18dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Product Details"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            android:layout_gravity="end"
+            android:tint="@color/red"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details"
+        android:layout_below="@+id/details_button"
+        android:background="@drawable/border_clothes"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Item Title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_contactus"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/details"
+        android:id="@+id/color_view"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@drawable/border_products">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/grey" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Color"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color_view"
+        android:id="@+id/select"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a size"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View size chart"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select"
+        android:id="@+id/size"
+        android:orientation="vertical"
+        android:background="@drawable/border_clothes">
+
+        <!--<org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_clothes"
+            app:arrowTint="@color/list_background_pressed"
+            />-->
+        <include layout="@layout/sizes" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/size"
+            android:weightSum="2">
+
+            <Button
+                android:background="@color/list_background_pressed"
+                android:id="@+id/imgbtn_try"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Try Out"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:background="@color/red"
+                android:id="@+id/imgbtn_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Add to Cart"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

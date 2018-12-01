@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rview"
+        android:layout_above="@+id/fab">
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/contentRoot"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.virtualrobe.virtualrobe.virtualrobe_app.Drag.DragLayer
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher"
+            android:id="@+id/drag_layer"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wardrobe"
+                />
+
+
+            <ImageView
+                android:id="@+id/imgView2"
+                android:layout_weight="50"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+
+                />
+
+
+        </com.virtualrobe.virtualrobe.virtualrobe_app.Drag.DragLayer>
+
+    </FrameLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_done_white_24dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        app:backgroundTint="#efc04a"/>
+
+    <include layout="@layout/fab_layout" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newsfeed"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Newsfeed" />
+
+        <item
+            android:id="@+id/friends"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="Friends" />
+
+        <item
+            android:id="@+id/outfits"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Outfits" />
+
+        <item
+            android:id="@+id/create_outfit"
+            android:icon="@drawable/ic_outfit"
+            android:title="Create Outfit"/>
+
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="My Calender" />
+    </group>
+
+    <item android:title="Help Centre">
+        <menu>
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Support" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="Help" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/invite"
+            android:icon="@drawable/ic_friends"
+            android:title="Invite Friends" />
+    </group>
+
+</menu>

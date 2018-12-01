@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#efc04a">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="Send a reply to"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:scaleType="center"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="username"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:scaleType="center"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="20dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:id="@+id/username"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/reply"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Write your reply here..." />
+
+</LinearLayout>

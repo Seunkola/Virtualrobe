@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#25515151"
+    android:id="@+id/contentRoot">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:background="@drawable/border_profile"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:drawableLeft="@drawable/ic_keyboard_backspace_black_24dp"
+            android:drawableStart="@drawable/ic_keyboard_backspace_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Help Center"
+            android:id="@+id/page_text"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        >
+        <!-- Current + adjacent page titles...-->
+
+        <android.support.v4.view.PagerTitleStrip
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:background="#efc04a"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#fff"
+            />
+
+</android.support.v4.view.ViewPager>
+    </RelativeLayout>

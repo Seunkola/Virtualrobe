@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "363608867814",
+    "firebase_url": "https://virtualrobe.firebaseio.com",
+    "project_id": "virtualrobe"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363608867814:android:d9f5e237da983223",
+        "android_client_info": {
+          "package_name": "com.virtualrobe.virtualrobe.virtualrobe_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363608867814-m949cajitalg60q7b56947f692mjtq0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOGF-iSvK7hhd58ya9yLSnlA7dw4rwC8o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+    <item
+        android:id="@+id/tab_rotate"
+        android:color="@color/list_background_pressed"
+        android:icon="@drawable/round_border"
+        android:title="Rotate" />
+    <item
+        android:id="@+id/tab_crop"
+        android:color="@color/second"
+        android:icon="@drawable/ic_crop_white_24dp"
+        android:title="Square Crop" />
+    <item
+        android:id="@+id/tab_free_hand_crop"
+        android:color="@android:color/holo_orange_dark"
+        android:icon="@drawable/ic_create_white_24dp"
+        android:title="Free Hand Crop" />
+
+</menu>

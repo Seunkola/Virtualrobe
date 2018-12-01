@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:components="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:background="#E5E5E5">
+
+    <TextView android:text="Please wait while your image gets loaded..."
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#000000">
+    </TextView>
+    <com.virtualrobe.virtualrobe.virtualrobe_app.gif.GifView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        components:src="@raw/freecrop"
+        />
+
+</LinearLayout>

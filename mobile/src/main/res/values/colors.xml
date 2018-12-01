@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="list_item_title">#000</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#efc04a</color>
+    <color name="splash">#f4af03</color>
+    <color name="second">#FFE9A934</color>
+    <color name="third">#FFE98534</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="counter_text_color2">#8ec5c4c4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="red">#F63006</color>
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <color name="chat_room_background">#ffd0d0d0</color>
+    <color name="chat_room_background_button">#ff5c5c5c</color>
+    <color name="light_red">#E53B14</color>
+    <color name="material_bordeaux_500">#992044</color>
+    <color name="material_bordeaux_700">#67132B</color>
+    <color name="material_bordeaux_800">#561529</color>
+    <color name="material_orange_a200">#FFAB40</color>
+
+</resources>
