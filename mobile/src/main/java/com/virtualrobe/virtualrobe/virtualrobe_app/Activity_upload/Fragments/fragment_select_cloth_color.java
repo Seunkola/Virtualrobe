@@ -52,7 +52,7 @@ public class fragment_select_cloth_color extends Fragment implements alphabetAda
     private FirebaseFirestore mFirestore;
     private alphabetAdapter alphabetAdapter;
     private ColorAdapter colorAdapter;
-    GridLayoutManager layoutManager;
+    GridLayoutManager layoutManager, layoutManager_color;
 
     Query query;
     private Query color_query;
@@ -113,8 +113,8 @@ public class fragment_select_cloth_color extends Fragment implements alphabetAda
             };
         }
 
-        layoutManager = new GridLayoutManager(getContext(),4);
-        recyclerView_Color.setLayoutManager(layoutManager);
+        layoutManager_color = new GridLayoutManager(getContext(),4);
+        recyclerView_Color.setLayoutManager(layoutManager_color);
         recyclerView_Color.setAdapter(colorAdapter);
     }
 
@@ -157,19 +157,16 @@ public class fragment_select_cloth_color extends Fragment implements alphabetAda
     @Override
     public void onStart() {
         super.onStart();
-        if (colorAdapter!=null && alphabetAdapter==null) {
-            colorAdapter.startListening();
-            alphabetAdapter.startListening();
-        }
+        colorAdapter.startListening();
+        alphabetAdapter.startListening();
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        if (colorAdapter!=null && alphabetAdapter==null) {
-            colorAdapter.stopListening();
-            alphabetAdapter.stopListening();
-        }
+        colorAdapter.stopListening();
+        alphabetAdapter.stopListening();
+
     }
 
 }
