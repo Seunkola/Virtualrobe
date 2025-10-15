@@ -1,5 +1,5 @@
 # Virtualrobe
-<img src="http://virtualrobe.com/img/cover/app-3.jpg"/>
+<img src="https://drive.google.com/file/d/1nMB6u0kaRyKBd5QLwVhHK-ZfhQoTQOOg/view?usp=drive_link"/>
 A Fashion AI app that styles and suggest outfits to wear with clothes in your actual wardrobe. Sign up now to join the list of beta tester:
 <a href="http://virtualrobe.com">SIGN UP NOW</a>
 
